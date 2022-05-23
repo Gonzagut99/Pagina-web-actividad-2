@@ -1,0 +1,289 @@
+/*plantilla general*/
+.encabezado{
+    background-color: #DEDBDB;
+
+
+}
+.imagen{
+    width: 200px;
+    padding: 1%;
+}
+.titulo1{
+    position: absolute;
+    top: 20px;
+    left: 150px
+}
+
+.titulo2{
+    position: absolute;
+    top: 60px;
+    left: 150px
+   }
+.busqueda{
+    padding: 8%;
+
+
+}
+.iconos{
+    width: 60px;
+    margin-top: 25px;
+    margin-left: 25px;
+    color: black;
+    
+
+
+}
+.espaciado{
+    margin-left: 100px;
+}
+.barratexto{
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+/*estilos login*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*body{
+  background-color: #252232;
+}*/  
+
+.login{
+  width: 400px;
+  height: 340px;
+  background: white;
+  margin: auto;
+  margin-top: 180px;
+  box-shadow: 7px 13px 37px #000;
+  padding: 20px 30px;
+  border-top: 5px solid #017bab;
+  color: black;
+}
+.login h5{
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 15px;
+  border-bottom:1px solid;
+  
+}
+
+.controles{
+  margin-bottom: 15px;
+  background: #F4F6F6;
+  border: 1px solid#017bab;
+  color: white;    
+}
+.btn-success{
+  margin-bottom: 15px;
+  border: rgb(17, 84, 17);
+}
+.unap{
+  
+  text-align: center;
+  
+}
+.otrap{
+  margin-top: -10px;
+  text-align: center;
+}
+.login a{
+  color: rgb(6, 6, 167);
+  text-decoration: none;
+  font-size: 14px;
+}
+.login a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+/*fin estilos login*/
+
+/*estilos footer*/
+.footer-dark {
+    padding:50px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+    margin-top: 100px;
+  }
+  
+  .footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .item.social {
+    text-align:center;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  
+  .footer-dark .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-dark .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
+  /*estilos footer*/
+/*fin plantilla general*/
+
+/*estilos items*/
+.mgn{
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.descutext{
+font-weight: normal;
+font-size: medium ;
+text-decoration: line-through;
+}
+/*discount tags*/
+/*=== Import Raleway fonts ===*/
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+#content{
+margin:10px auto;
+background:transparent;
+height:200px;
+width:70%;
+/*border-radius*/
+-webkit-border-radius:8px;
+ -moz-border-radius:8px;
+    border-radius:8px;
+-webkit-box-shadow:0 1px 0 rgba(0,0,0,.1);
+ -moz-box-shadow:0 1px 0 rgba(0,0,0,.1);
+    box-shadow:0 1px 0 rgba(0,0,0,.1);
+}
+
+
+.discount-label {
+ padding:8px; 
+ position:relative;
+float:left;
+margin-top:35px;
+ margin-left: 150px;
+width:80px;
+height: 40px;
+-webkit-border-radius:0 4px 0 4px;
+-moz-border-radius:0 4px 0 4px;
+border-radius:0 4px 4px 0;
+
+}
+
+.discount-label:after { 
+
+  right: 100%; 
+  border: solid transparent; content: " "; 
+  height: 0; 
+  width: 0; 
+  position: absolute;
+  border-color: rgba(136, 183, 213, 0);
+   
+  border-width: 20px; 
+  top: 50%; 
+  margin-top: -20px;} 
+
+.discount-label:before {
+content: '';
+z-index: 2;
+position: absolute;
+top: 42%;
+right: 100%;
+width: 7px;
+height: 7px;
+opacity: .95;
+background: #ffffff;
+border-radius: 7px;
+-webkit-box-shadow: inset .5px 0 rgba(0, 0, 0, 0.6);
+box-shadow: inset .5px 0 rgba(0, 0, 0, 0.6);
+
+}
+
+
+.discount-label span {
+color:#ffffff;
+font-size:20px;
+  text-align:center;
+font-family:"Raleway",Helvetica;
+
+}
+
+
+.red{ 
+background-color:#E80707; 
+}
+.red:after{ 
+border-right-color: #E80707;
+  
+}
+
+/*discount tags*/
+/*fin estilos items*/

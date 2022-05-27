@@ -1,4 +1,4 @@
-document.get
+//Llamar imagenes
 let arrayImagenesP=[
     {src:"../resources/img/imagenes_plumones/plumon1.jpg"},
     {src:"../resources/img/imagenes_plumones/plumon2.jpg"},
@@ -10,6 +10,7 @@ let arrayImagenesP=[
     {src:"../resources/img/imagenes_plumones/plumon8.jpg"},
     {src:"../resources/img/imagenes_plumones/plumon9.jpg"},
 ];
+//Declaración de arrays
 let arrayProductos=[
     {id:01,
     breadcrum:"PLUMONES GRIP ESTUCHE X 12 FABER CASTELL",
@@ -102,10 +103,10 @@ let arrayProductos=[
     marca:"ARTESCO",
     }
 ];
-
+//Declaración de variables
 var prodIndividualNorm=$("#idProdIndividualNormal");
 var prodIndividualDesc=$("#idProdIndividualDescuento");
-
+//Funciones para lanzar los productos
 function producto1(){
     $("#idCatalogoPlumones").hide()
     $(prodIndividualNorm).show()

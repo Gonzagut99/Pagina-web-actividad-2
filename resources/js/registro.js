@@ -1,11 +1,11 @@
 $(document).ready(function(){
     $("#idBotonDatos").hide();
 });
-
+//Declaración de funciones
 function BotonDatos (){
     $("#idBotonDatos").show();
 }
-
+//Declaración de variables
 var contador = 9;
 let arrayUsuario=[];
 //Funcion Registrarse para usar los datos de los input del formulario
@@ -208,7 +208,7 @@ function fnValidacionCampos(){
         InfoUsuario();
     });
 }*/
-
+//Función para mostrar la información de ingresada por el usuario.
 function InfoUsuario(){
         $("#idSeccion01").hide();
         $("#idSeccion02").show();

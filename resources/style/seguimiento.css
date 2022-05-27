@@ -1,0 +1,103 @@
+.txt{
+    font-size: 12px;
+    font-weight: bold;
+}
+.txt1{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 110px;
+}
+.edit{
+    width: 400px;
+    height: 340px;
+    margin: auto;
+   
+}    
+.caja{
+    width: 340px;
+    
+}
+.boton{
+    width: 340px;
+    height: 45px;
+}
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+}
+
+h1{
+    font-family: Arial;
+    font-weight: bold;
+    position: absolute;
+}
+p{
+    font-family: Arial;
+    margin-top: 65px;
+    position: absolute;
+    
+    
+    
+}
+/*estilos login*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*body{
+    background-color: #252232;
+  }*/  
+  
+  .login{
+    width: 400px;
+    height: 340px;
+    background: white;
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 5px solid #017bab;
+    color: black;
+  }
+  .login h5{
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 15px;
+    border-bottom:1px solid;
+    
+  }
+  
+  .controles{
+    margin-bottom: 15px;
+    background: #F4F6F6;
+    border: 1px solid#017bab;
+    color: white;    
+  }
+  .btn-success{
+    margin-bottom: 15px;
+    border: rgb(17, 84, 17);
+  }
+  .unap{
+    
+    text-align: center;
+    
+  }
+  .otrap{
+    margin-top: -10px;
+    text-align: center;
+  }
+  .login a{
+    color: rgb(6, 6, 167);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .login a:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+  
+  /*fin estilos login*/

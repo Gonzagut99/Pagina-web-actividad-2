@@ -206,6 +206,10 @@ font-weight: normal;
 font-size: medium ;
 text-decoration: line-through;
 }
+.descutext2{
+	font-weight: normal;
+	text-decoration: line-through;
+}
 /*discount tags*/
 /*=== Import Raleway fonts ===*/
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
@@ -284,6 +288,64 @@ background-color:#E80707;
 border-right-color: #E80707;
   
 }
+
+.discount-label2 {
+  padding:8px; 
+  position:relative;
+ float:left;
+ margin-top:35px;
+  margin-left: 380px;
+ width:80px;
+ height: 40px;
+ -webkit-border-radius:0 4px 0 4px;
+ -moz-border-radius:0 4px 0 4px;
+ border-radius:0 4px 4px 0;
+ 
+ }
+ .discount-label2:after { 
+
+  right: 100%; 
+  border: solid transparent; content: " "; 
+  height: 0; 
+  width: 0; 
+  position: absolute;
+  border-color: rgba(136, 183, 213, 0);
+   
+  border-width: 20px; 
+  top: 50%; 
+  margin-top: -20px;} 
+
+.discount-label2:before {
+content: '';
+z-index: 2;
+position: absolute;
+top: 42%;
+right: 100%;
+width: 7px;
+height: 7px;
+opacity: .95;
+background: #ffffff;
+border-radius: 7px;
+-webkit-box-shadow: inset .5px 0 rgba(0, 0, 0, 0.6);
+box-shadow: inset .5px 0 rgba(0, 0, 0, 0.6);
+
+}
+
+
+.discount-label2 span {
+color:#ffffff;
+font-size:20px;
+  text-align:center;
+font-family:"Raleway",Helvetica;
+
+}
+.red2{ 
+  background-color:#E80707; 
+  }
+  .red2:after{ 
+  border-right-color: #E80707;
+    
+  }
 
 /*discount tags*/
 /*fin estilos items*/

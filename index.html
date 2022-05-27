@@ -39,29 +39,19 @@
       <div class="col">
           <div class="row espaciado">
               <div class="col">
-                <a href="">
-                 <!--<img class="iconos" src="./resources/img/imagenes_index/encabezado/89140.png" alt="">-->
+
+                <a href="./html/seguimiento.html">
                  <i class="fa-solid fa-truck fa-3x iconos"></i>
                 </a>
-                <a href="">
-                 <!--<img class="iconos" src="./resources/img/imagenes_index/encabezado/107831.png" alt="">-->
+
+                <a href="" data-bs-toggle="modal" data-bs-target="#carrito">
                  <i class="fa-solid fa-cart-shopping fa-3x iconos"></i>
                 </a>
-                <!--<a href="">
-                 <img class="iconos" src="./resources/img/imagenes_index/encabezado/711769.png" alt="">
-                </a>-->
                 
                 <!-- Boton para lanzar el modal--> 
                 <a class="navbar-brand" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">
-                  <!--<img class="iconos" src="./resources/img/imagenes_index/encabezado/711769.png" alt="">-->
                   <i class="fa-solid fa-user fa-3x iconos"></i>
                 </a>
-                <!--<nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#">Iniciar Sesión</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">...</li>
-                  </ol>
-                </nav>-->
             </div>
         </div>
      </div>
@@ -75,10 +65,10 @@
                     <div class="navbar-nav">
                       <a class="nav-link barratexto" href="./html/catalogo_lapices.html">LÁPICES</a>
                       <a class="nav-link barratexto" href="./html/catalogo_cuadernos.html">CUADERNOS</a>
-                      <a class="nav-link barratexto" href="#">LAPICEROS</a>
-                      <a class="nav-link barratexto" href="#">PLUMONES</a>
-                      <a class="nav-link barratexto" href="#">GOMAS</a>
-                      <a class="nav-link barratexto" href="#">MOCHILAS</a>
+                      <a class="nav-link barratexto" href="./html/catalogo_lapiceros.html">LAPICEROS</a>
+                      <a class="nav-link barratexto" href="./html/catalogo_plumones.html">PLUMONES</a>
+                      <a class="nav-link barratexto" href="./html/gomas.html">GOMAS</a>
+                      <a class="nav-link barratexto" href="./html/mochilas.html">MOCHILAS</a>
                     </div>
                   </div>
                 </div>
@@ -154,6 +144,22 @@
       </div>
     <!--fin Contenido-->
 
+    <!--modal carrito-->
+    <div class="modal fade" id="carrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5><i class="fa-solid fa-cart-shopping"></i>  Mi Carrito</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              No tiene ningun producto en su carrito de compras 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--fin modal carrito-->
+
     <!-- Modal log in-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -207,24 +213,6 @@
                       <a href=""><i style="color: #EBEDEF;" class="fa-brands fa-instagram-square fa-2x"></i></a>
                     </p>
                   </div>
-                  <!--<div class="col-md-6 item text">
-                      <h3>Medios de pago</h3>
-                      <p><i class="fa-brands fa-cc-visa fa-2x"></i><span>   </span>
-                        <i class="fa-brands fa-cc-mastercard fa-2x"></i><span>   </span>
-                        <i class="fa-brands fa-whatsapp-square fa-2x"></i>
-                      </p>
-                  </div>
-                  <div class="col-md-6 item text">
-                    <h3>Redes Sociales</h3>
-                    <p><i class="fa-brands fa-facebook fa-2x"></i><span>   </span>
-                      <i class="fa-brands fa-instagram-square fa-2x"></i>
-                    </p>
-                    
-                  </div>
-                  <div class="col-md-6 item text">
-                      <h3>Medios de pago</h3>
-                      <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-                  </div>-->
               </div>
               <p class="copyright">La esquina del buen lector © 2022</p>
           </div>

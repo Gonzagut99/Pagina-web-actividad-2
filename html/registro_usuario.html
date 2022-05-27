@@ -96,9 +96,10 @@
                 </div>
               </div>
             </div>
-        <!--Registro-->
+        <!--Registro/Sección01-->
         <div id="idSeccion01" class="row p-5">
             <div class="col" style="padding-left:20% ; padding-right:20%;">
+                <h5>Complete el formulario:</h5>
                 <form>
                     <div class="row">
                         <div class="form-group col">
@@ -129,8 +130,8 @@
                             <label for="idSexo">Sexo:</label>
                           <select id="idSexo" class="form-select" aria-label="Default select example">
                             <option selected></option>
-                            <option value="1">Masculino</option>
-                            <option value="2">Femenino</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
                           </select>
                           <small id="idErrorSexo" style="color: red; display: none;">Completa este espacio.</small>
                         </div>
@@ -138,28 +139,32 @@
                     <div class="row">
                         <div class="form-group">
                             <label for="idDNI">DNI:</label>
-                            <input type="number" class="form-control" id="idDNI" placeholder="Nro. de DNI">
-                            <small id="idErrorDNI" style="color: red; display: none;">Completa este espacio.</small> 
+                            <input type="number" class="form-control" id="idDNI" minlength="8" maxlength="8" placeholder="Nro. de DNI">
+                            <small id="idErrorDNI" style="color: red; display: none;">Completa este espacio.</small>
+                            <small id="idLengthDNI" style="color: red; display: none;">El número de DNI debe contener 8 números.</small> 
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group">
                             <label for="idTelefono">Número de teléfono:</label>
-                            <input type="number" class="form-control" id="idTelefono" placeholder="Nro. de teléfono">
-                            <small id="idErrorTelefono" style="color: red; display: none;">Completa este espacio.</small> 
+                            <input type="number" class="form-control" id="idTelefono" minlength="9" maxlength="9" placeholder="Nro. de teléfono">
+                            <small id="idErrorTelefono" style="color: red; display: none;">Completa este espacio.</small>
+                            <small id="idLengthTelefono" style="color: red; display: none;">Este espacio debe contener 9 números.</small> 
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
                                 <label for="idContraseña">Contraseña:</label>
-                                <input type="password" class="form-control" id="idContraseña" placeholder="Elige una contraseña"> 
+                                <input type="password" class="form-control" id="idContraseña" minlength="7" placeholder="Contraseña, minimo 7 caractéres"> 
                                 <small id="idErrorContraseña" style="color: red; display: none;">Completa este espacio.</small>
+                                <small id="idLengthContraseña" style="color: red; display: none;">La contraseña debe contener al menos 7 caractéres.</small>
                             </div>
                             <div class="form-group">
                                 <label for="idConfirmarPw">Confirmar contraseña:</label>
-                                <input type="password" class="form-control" id="idConfirmarPw" placeholder="Vuelva a escribir la contraseña"> 
+                                <input type="password" class="form-control" id="idConfirmarPw" minlength="7" placeholder="Vuelva a escribir la contraseña"> 
                                 <small id="idErrorConfirmarPw" style="color: red; display: none;">Completa este espacio.</small>
+                                <small id="idNoCoincide" style="color: red; display: none;">Las contraseñas no coinciden, vuelve a intentar.</small>
                             </div>
                         </div>                        
                     </div>
@@ -189,10 +194,23 @@
                     </div>                         
                 </form>
                 <div class="row mt-4" style="margin-left:30% ; margin-right:30%;">
-                    <button type="button" class="btn btn-lg btn-success" onclick="fnRegistrarse()">Registrarme</button>
+                    <button id="idBotonRegistro" type="button" class="btn btn-lg btn-success" onclick="fnRegistrarse()">Registrarme</button>
+                    <button id="idBotonDatos" type="button" class="btn btn-lg btn-success" onclick="InfoUsuario()">Mostrar Información de Usuario</button>
                 </div>
+              
             </div>
-        </div> 
+        </div>
+        <!--fin Registro/Secciónn01-->
+        <!--Sección 02-->
+        <div id="idSeccion02" class="row p-5" style="display:none;">
+          <div class="col" style="padding-left:20% ; padding-right:20%;">
+            <br>
+            <ul id="idInfoUsuario">
+              <h5>Información de Usuario:</h5>
+            </ul>
+          </div>
+        </div>
+        <!--Fin sección 02--> 
      </div>
      </div>
 
